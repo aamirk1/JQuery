@@ -99,7 +99,28 @@
 
 // });
 
+// part 3
+
 jQuery.noConflict();
 jQuery(document).ready(function($){
-    
+    // hide image
+    $("#btn-hide").click(function(){
+        $("#img-id").hide(2000,function(){
+            console.log("image is hide")
+        });
+    });
+
+    // show
+    $("#btn-show").click(function(){
+        $("#img-id").show(5000,function(){
+            console.log("image is show")
+        });
+    });
+
+    // show/hide = toggle
+    $("#btn-toggle").click(function(){
+        $("#img-id").toggle(3000,function(){
+            console.log("image is hide/show")
+        });
+    });
 });
