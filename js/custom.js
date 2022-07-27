@@ -77,4 +77,24 @@ jQuery(document).ready(function($){
     $("#name").keyup(function(){
         console.log("Key Up");
     });
+
+    // Keyboard Events
+    $("#fname").focus(function(){
+        console.log("Focus Field")
+    });
+
+    $("#fname").blur(function(){
+        console.log("Blur Field")
+    });
+
+    $("#form-id").submit(function(e){
+        console.log("Form Submitted");
+        e.preventDefault(); // this method is used to stop auto reload browser
+    });
+
+    // Window Events
+    $(window).resize(function(){
+        console.log("Windows Resized")
+    })
+
 });
