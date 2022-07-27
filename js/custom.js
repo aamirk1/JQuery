@@ -46,55 +46,60 @@
 
 // part 2
 
+// jQuery.noConflict();
+// jQuery(document).ready(function($){
+//     // Mouse Events
+//     $("p").click(function(){
+//         console.log("Clicked");
+//     });
+
+//     $("p").dblclick(function(){
+//         console.log("Double Clicked");
+//     });
+
+//     $("p").mouseenter(function(){
+//         console.log("Mouse Enter");
+//     });
+
+//     $("p").mouseleave(function(){
+//         console.log("Mouse Leave");
+//     });
+
+//     // Keyboard Events
+//     $("#name").keypress(function(){
+//         console.log("Key Press");
+//     });
+
+//     $("#name").keydown(function(){
+//         console.log("Key Down");
+//     });
+
+//     $("#name").keyup(function(){
+//         console.log("Key Up");
+//     });
+
+//     // Keyboard Events
+//     $("#fname").focus(function(){
+//         console.log("Focus Field")
+//     });
+
+//     $("#fname").blur(function(){
+//         console.log("Blur Field")
+//     });
+
+//     $("#form-id").submit(function(e){
+//         console.log("Form Submitted");
+//         e.preventDefault(); // this method is used to stop auto reload browser
+//     });
+
+//     // Window Events
+//     $(window).resize(function(){
+//         console.log("Windows Resized");
+//     });
+
+// });
+
 jQuery.noConflict();
 jQuery(document).ready(function($){
-    // Mouse Events
-    $("p").click(function(){
-        console.log("Clicked");
-    });
-
-    $("p").dblclick(function(){
-        console.log("Double Clicked");
-    });
-
-    $("p").mouseenter(function(){
-        console.log("Mouse Enter");
-    });
-
-    $("p").mouseleave(function(){
-        console.log("Mouse Leave");
-    });
-
-    // Keyboard Events
-    $("#name").keypress(function(){
-        console.log("Key Press");
-    });
-
-    $("#name").keydown(function(){
-        console.log("Key Down");
-    });
-
-    $("#name").keyup(function(){
-        console.log("Key Up");
-    });
-
-    // Keyboard Events
-    $("#fname").focus(function(){
-        console.log("Focus Field")
-    });
-
-    $("#fname").blur(function(){
-        console.log("Blur Field")
-    });
-
-    $("#form-id").submit(function(e){
-        console.log("Form Submitted");
-        e.preventDefault(); // this method is used to stop auto reload browser
-    });
-
-    // Window Events
-    $(window).resize(function(){
-        console.log("Windows Resized")
-    })
-
+    
 });
