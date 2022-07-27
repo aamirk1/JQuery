@@ -192,7 +192,7 @@ jQuery(document).ready(function($){
     let htmld = $("h3").html();
     console.log(htmld);
 
-    // set Text
+    // set html
     $("#btn-htmls").click(function(){
         let htmltext = "<b>this is span tag</b>";
         $("span").html(htmltext);        
