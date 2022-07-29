@@ -192,9 +192,47 @@ jQuery(document).ready(function($){
     let htmld = $("h3").html();
     console.log(htmld);
 
-    // set html
+    // Set Html
     $("#btn-htmls").click(function(){
         let htmltext = "<b>this is span tag</b>";
         $("span").html(htmltext);        
+    });
+
+    // Get Value
+     var inputvalue = $("#name").val();
+     console.log(inputvalue);
+
+    // Set Value using button
+    $("#btn-val").click(function(){
+        $("#name").val("New  value");
+    });
+
+    // Get Attribute value = this method is used to get Attribute value
+    var attrval1 = $("link").attr("href");
+    console.log(attrval1);
+
+    var attrval2 = $("#name").attr("data-ne");
+    console.log(attrval2);
+
+    //set attribute value = this method is used to set Attribute value
+    // example 1
+    // $("#btn-setattrval").click(function(){
+        //     $("#name").attr("data-ne", "25");        
+        // });
+        
+    // example 2
+    $("#btn-setattrval").click(function(){
+        // get data
+        console.log($("#name").attr("data-ne"));
+        
+        //set data
+        $("#name").attr("data-ne", "25");      
+        console.log("data set");
+        console.log($("#name").attr("data-ne"));
+    });
+    // example 2
+
+    $("#btn-setimgattrval").click(function(){
+        $("#img-id").attr("src", "images/pex.jpg");
     });
 });
